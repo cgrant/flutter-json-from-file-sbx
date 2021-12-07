@@ -7,21 +7,21 @@ This example loads a sample dataset from a file and displays a random entry in t
 
 Register the file in the assets section of pubspec.yaml
 
-```
+```yaml
 assets:
   - assets/data/quotes.json
 ```
 
 Import Services and convert
 
-```
+```dart
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 ```
 
 Load data into a variable
 
-```
+```dart
 class _MyHomePageState extends State<MyHomePage> {
   List _quotes = [];
   
@@ -47,7 +47,7 @@ class _MyHomePageState extends State<MyHomePage> {
 
 Display a random quote
 
-```
+```dart
 class Quote {
   String quote = "";
   String author = "";
@@ -92,7 +92,7 @@ class _MyHomePageState extends State<MyHomePage> {
 
 Pull a new quote
 
-```
+```dart
 
 
   ...
